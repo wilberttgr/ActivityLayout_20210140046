@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_linear_layout" >
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="174dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="60dp"
+      app:srcCompat="@drawable/honda" />
+
+  <!-- Button 1 and Button 2 -->
+  <LinearLayout
+      android:layout_width="348dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="#000000"
+        android:text="Button 1"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:text="Button 2"
+        app:cornerRadius="20dp" />
+  </LinearLayout>
+
+  <!-- Button 5 -->
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="352dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#8C0000"
+      android:text="Match Parent"
+      app:cornerRadius="20dp" />
+
+  <Button
+      android:id="@+id/button6"
+      android:layout_width="160dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="30dp"
+      android:backgroundTint="#8B0000"
+      android:text="Right"
+      app:cornerRadius="20dp" />
+
+  <Button
+      android:id="@+id/button7"
+      android:layout_width="160dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#8A0000"
+      android:text="Left"
+      app:cornerRadius="20dp" />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="72dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="select your Car" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FF0000"
+        app:srcCompat="@drawable/ic_baseline_arrow_circle_right_24" />
+
+  </LinearLayout>
+
+</LinearLayout>
